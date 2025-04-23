@@ -30,4 +30,4 @@ jobs:
           dotnet-version: 9.0
       
       - name: Format
-        run: dotnet format --check --verbosity detailed
+        run: dotnet format --verify-no-changes
