@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_3", "Calc_3\Calc_3.csproj", "{D238C953-17C8-4296-A38A-4C45C3994F78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github_actions", "github_actions", "{AA80BD6B-239C-4489-B538-A151B9AB10F9}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet_format.yml = .github\workflows\dotnet_format.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{A39B9D40-9337-4484-9F9B-AEEE7BD382F2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D238C953-17C8-4296-A38A-4C45C3994F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D238C953-17C8-4296-A38A-4C45C3994F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D238C953-17C8-4296-A38A-4C45C3994F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D238C953-17C8-4296-A38A-4C45C3994F78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

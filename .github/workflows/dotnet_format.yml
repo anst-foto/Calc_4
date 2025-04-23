@@ -1,0 +1,33 @@
+name: dotnet format
+
+on:
+  push: [ "master" ]
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0
+      
+      - name: Build
+        run: dotnet build
+  
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0
+      
+      - name: Format
+        run: dotnet format --check --verbosity detailed
